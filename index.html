@@ -5,124 +5,171 @@
 <title>Ibad Hussain | Portfolio</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #0f172a, #020617);
+    color: #e5e7eb;
 }
-header {
-    background: #111827;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+
+/* Layout */
+.container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    min-height: 100vh;
 }
-header h1 {
-    margin: 0;
-    font-size: 40px;
+
+/* LEFT PANEL */
+.left {
+    padding: 60px 40px;
+    background: rgba(255,255,255,0.03);
 }
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-    opacity: 0.9;
+.left h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.left h3 {
+    font-weight: normal;
+    opacity: 0.85;
+}
+.tagline {
+    margin-top: 30px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #c7d2fe;
+}
+
+/* RIGHT PANEL */
+.right {
+    padding: 60px;
 }
 section {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 35px;
-    margin-top: 25px;
-    border-radius: 8px;
+    margin-bottom: 50px;
 }
 h2 {
-    color: #111827;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 8px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #a5b4fc;
+}
+p {
+    line-height: 1.8;
+    opacity: 0.95;
 }
 ul {
-    line-height: 1.8;
+    padding-left: 20px;
 }
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
 footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 18px;
-    margin-top: 40px;
+    margin-top: 80px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .right {
+        padding: 40px;
+    }
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
-    <h1>Ibad Hussain</h1>
-    <p>Computer Science Student | AI & Prompt Engineering Enthusiast</p>
-</header>
+<div class="container">
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science student with a strong interest in Artificial Intelligence
-        and prompt-based interaction with AI tools. I am currently learning programming
-        fundamentals and exploring how well-structured prompts can improve AI responses
-        for learning, productivity, and problem solving.
-    </p>
-</section>
+    <!-- LEFT -->
+    <div class="left">
+        <h1>Ibad Hussain</h1>
+        <h3>Computer Science Student</h3>
 
-<section>
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Programming Fundamentals</li>
-        <li>Java (Basic)</li>
-        <li>C++ (Basic)</li>
-        <li>HTML & CSS (Basic)</li>
-        <li>Using AI tools for learning and task assistance</li>
-        <li>Prompt Writing & Refinement (Beginner)</li>
-    </ul>
-</section>
+        <div class="tagline">
+            I am not trying to sound like an expert.<br>
+            I am learning how to ask better questions,<br>
+            think clearly, and communicate ideas<br>
+            in a world shaped by AI.
+        </div>
+    </div>
 
-<section>
-    <h2>Soft Skills</h2>
-    <ul>
-        <li>Debating</li>
-        <li>Public Speaking</li>
-        <li>Communication Skills</li>
-        <li>Critical Thinking</li>
-        <li>Team Collaboration</li>
-    </ul>
-</section>
+    <!-- RIGHT -->
+    <div class="right">
 
-<section>
-    <h2>Projects & Academic Work</h2>
-    <ul>
-        <li>Quiz Game (Basic Project)</li>
-        <li>Student Management System (Concept)</li>
-        <li>University Management System (Proposal)</li>
-    </ul>
-</section>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Science student with a strong interest in Artificial
+                Intelligence and prompt-based interaction with AI tools. I enjoy
+                exploring how clear thinking, structured language, and the right
+                questions can significantly improve AI outputs.
+            </p>
+        </section>
 
-<section>
-    <h2>Goal</h2>
-    <p>
-       My long-term goal is to grow into a person who can bridge human thought and intelligent systems. I want to deeply understand how people think, communicate, and express ideas—and then use that understanding to interact with AI in a meaningful, ethical, and practical way.
+        <section>
+            <h2>What I’m Learning</h2>
+            <ul>
+                <li>Programming Fundamentals</li>
+                <li>Java & C++ (basic level)</li>
+                <li>HTML & CSS (basic)</li>
+                <li>Using AI tools for learning & productivity</li>
+                <li>Prompt writing and refinement (beginner)</li>
+            </ul>
+        </section>
 
-Rather than rushing to become an “expert,” my focus is on building strong foundations: learning continuously, improving how I ask questions, and refining how I guide AI tools to support learning, creativity, and problem-solving.
+        <section>
+            <h2>Communication Strength</h2>
+            <p>
+                Alongside technical learning, I actively develop my communication
+                skills. I have experience in debating and public speaking, which
+                helps me express ideas clearly, argue logically, and understand
+                different perspectives — a skill I believe is essential in
+                human–AI interaction.
+            </p>
+        </section>
 
-Alongside technical growth, I aim to strengthen my communication, debating, and public speaking skills so I can explain complex ideas clearly, represent ideas confidently, and contribute positively in collaborative environments.
+        <section>
+            <h2>Academic Projects</h2>
+            <ul>
+                <li>Quiz Game (basic project)</li>
+                <li>Student Management System (concept)</li>
+                <li>University Management System (proposal)</li>
+            </ul>
+        </section>
 
-In the future, I want to be known not just for using technology, but for using it responsibly, thoughtfully, and with purpose—as someone who learns deeply, communicates clearly, and helps others make sense of complex systems.
-    </p>
-</section>
+        <section>
+            <h2>Future Direction</h2>
+            <p>
+                My goal is to grow into someone who understands both human thinking
+                and intelligent systems. I want to improve how ideas are translated
+                into prompts, how AI responses are evaluated, and how communication
+                can make technology more useful and responsible.
+            </p>
+        </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: ibadhussaintabassum@gmail.com</p>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: ibadhussaintabassum@gmail.com</p>
+            <p>Phone: 03168723910</p>
+            
+        </section>
 
-</section>
+        <footer>
+            © 2026 Ibad Hussain
+        </footer>
 
-<footer>
-    © 2026 Ibad Hussain
-</footer>
+    </div>
+
+</div>
 
 </body>
 </html>
+
